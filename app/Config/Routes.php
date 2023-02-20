@@ -39,6 +39,8 @@ $routes->post('/profile/add_pekerjaan', 'Biodata::add_pekerjaan');
 $routes->post('/profile/save_biodata', 'Biodata::save_biodata');
 $routes->post('/profile/save_avatar', 'Biodata::save_avatar');
 
+//Admin
+$routes->get('/admin', 'Admin::index');
 
 //SELECT
 $routes->post('/select/prov', 'Select::prov');

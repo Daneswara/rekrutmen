@@ -103,6 +103,7 @@ class Users extends BaseController
                 session()->set([
                     'username' => $dataUser->username,
                     'fullname' => $dataUser->fullname,
+                    'role_id' => $dataUser->role_id,
                     'user_id' => $dataUser->user_id,
                     'logged_in' => TRUE
                 ]);
@@ -111,7 +112,11 @@ class Users extends BaseController
                     'iplogin' => $this->getIPAddress(),
                     "last_login" => date("Y-m-d H:i:s"),
                 ]);
-                return redirect()->to(base_url('/profile'));
+                if($dataUser->role_id==1){
+                    return redirect()->to(base_url('/admin'));
+                }else{
+                    return redirect()->to(base_url('/profile'));
+                }
             } else {
                 session()->setFlashdata('error', 'Username & Password Salah');
                 return redirect()->back();
@@ -120,7 +125,7 @@ class Users extends BaseController
             session()->setFlashdata('error', 'Username & Password Salah');
             return redirect()->back();
         }
-        return redirect()->to('/profile');
+        // return redirect()->to('/profile');
     }
     public function getIPAddress()
     {

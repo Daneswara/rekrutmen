@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Controllers;
-class Home extends BaseController
+class Admin extends BaseController
 {
     public function db()
     {
@@ -13,8 +13,8 @@ class Home extends BaseController
     {
        $job = $this->db()->query("SELECT * FROM job")->getResult();
     //    dd($job);
-    //    echo json_encode($job);
-        $result  = array('job' => $job);
-        return view('index', $result);
+       echo json_encode($job);
+        // $result  = array('job' => $job);
+        // return view('index', $result);
     }
 }

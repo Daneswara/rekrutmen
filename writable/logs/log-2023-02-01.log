@@ -1,0 +1,160 @@
+ERROR - 2023-02-01 00:00:09 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\Postgre\pg_connect() in C:\xampp\htdocs\rekruitmen\system\Database\Postgre\Connection.php:75
+Stack trace:
+#0 C:\xampp\htdocs\rekruitmen\system\Database\BaseConnection.php(391): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 C:\xampp\htdocs\rekruitmen\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\rekruitmen\app\Controllers\Home.php(9): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#3 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\rekruitmen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\rekruitmen\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2023-02-01 00:00:09 --> Unable to connect to the database.
+Main connection [Postgre]: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(9): CodeIgniter\Database\BaseConnection->query('SELECT * FROM mst_sekolah')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-01 00:00:29 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\Postgre\pg_connect() in C:\xampp\htdocs\rekruitmen\system\Database\Postgre\Connection.php:75
+Stack trace:
+#0 C:\xampp\htdocs\rekruitmen\system\Database\BaseConnection.php(391): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 C:\xampp\htdocs\rekruitmen\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\rekruitmen\app\Controllers\Home.php(9): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#3 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\rekruitmen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\rekruitmen\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2023-02-01 00:00:29 --> Unable to connect to the database.
+Main connection [Postgre]: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(9): CodeIgniter\Database\BaseConnection->query('SELECT * FROM mst_sekolah')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-01 00:00:31 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\Postgre\pg_connect() in C:\xampp\htdocs\rekruitmen\system\Database\Postgre\Connection.php:75
+Stack trace:
+#0 C:\xampp\htdocs\rekruitmen\system\Database\BaseConnection.php(391): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 C:\xampp\htdocs\rekruitmen\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\rekruitmen\app\Controllers\Home.php(9): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#3 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\rekruitmen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\rekruitmen\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2023-02-01 00:00:31 --> Unable to connect to the database.
+Main connection [Postgre]: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(9): CodeIgniter\Database\BaseConnection->query('SELECT * FROM mst_sekolah')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-01 00:00:32 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\Postgre\pg_connect() in C:\xampp\htdocs\rekruitmen\system\Database\Postgre\Connection.php:75
+Stack trace:
+#0 C:\xampp\htdocs\rekruitmen\system\Database\BaseConnection.php(391): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 C:\xampp\htdocs\rekruitmen\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\rekruitmen\app\Controllers\Home.php(9): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#3 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\rekruitmen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\rekruitmen\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2023-02-01 00:00:32 --> Unable to connect to the database.
+Main connection [Postgre]: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(9): CodeIgniter\Database\BaseConnection->query('SELECT * FROM mst_sekolah')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-01 00:05:17 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\Postgre\pg_connect() in C:\xampp\htdocs\rekruitmen\system\Database\Postgre\Connection.php:75
+Stack trace:
+#0 C:\xampp\htdocs\rekruitmen\system\Database\BaseConnection.php(391): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 C:\xampp\htdocs\rekruitmen\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\rekruitmen\app\Controllers\Home.php(9): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#3 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\rekruitmen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\rekruitmen\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2023-02-01 00:05:17 --> Unable to connect to the database.
+Main connection [Postgre]: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(9): CodeIgniter\Database\BaseConnection->query('SELECT * FROM mst_sekolah')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-01 00:10:26 --> Call to undefined method CodeIgniter\Database\Postgre\Result::result()
+in APPPATH\Controllers\Home.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-01 00:11:45 --> Call to undefined method CodeIgniter\Database\Postgre\Result::resultArray()
+in APPPATH\Controllers\Home.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-01 00:14:24 --> Call to undefined method PgSql\Result::getResult()
+in APPPATH\Controllers\Home.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-01 14:35:30 --> Invalid file: "/layout/list.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/layout/list.php')
+ 2 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('/layout/list', null, true)
+ 3 APPPATH\Views\layout\topbar_mobile.php(14): CodeIgniter\View\View->include('/layout/list')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\topbar_mobile.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('/layout/topbar_mobile', null, true)
+ 7 APPPATH\Views\layout\master.php(29): CodeIgniter\View\View->include('/layout/topbar_mobile')
+ 8 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\master.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('/layout/master', [], true)
+11 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/page', [], true)
+12 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('index', [], true)
+13 APPPATH\Controllers\Home.php(17): view('index', [...])
+14 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+15 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+16 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-01 14:58:04 --> Invalid file: "/section/total_rekruiter.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/section/total_rekruiter.php')
+ 2 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('/section/total_rekruiter', null, true)
+ 3 APPPATH\Views\index.php(296): CodeIgniter\View\View->include('/section/total_rekruiter')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('index', [], true)
+ 7 APPPATH\Controllers\Home.php(17): view('index', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

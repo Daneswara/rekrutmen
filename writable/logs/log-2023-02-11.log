@@ -1,0 +1,328 @@
+INFO - 2023-02-11 00:56:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 00:56:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 00:56:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 00:56:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 03:03:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-02-11 03:03:26 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 1: ...oin biodata b on b.user_id = u.user_id where u.user_id = '' 
+                                                                    ^ in C:\xampp\htdocs\rekruitmen\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\rekruitmen\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'SELECT u.fullna...')
+#2 C:\xampp\htdocs\rekruitmen\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('SELECT u.fullna...')
+#3 C:\xampp\htdocs\rekruitmen\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT u.fullna...')
+#4 C:\xampp\htdocs\rekruitmen\app\Controllers\Biodata.php(20): CodeIgniter\Database\BaseConnection->query('SELECT u.fullna...')
+#5 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(934): App\Controllers\Biodata->profile()
+#6 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Biodata))
+#7 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\rekruitmen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\rekruitmen\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-02-11 03:03:26 --> pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 1: ...oin biodata b on b.user_id = u.user_id where u.user_id = '' 
+                                                                    ^
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Controllers\Biodata.php(20): CodeIgniter\Database\BaseConnection->query('SELECT u.fullname, u.phone, u.email, b.* FROM users u join biodata b on b.user_id = u.user_id where u.user_id = \'\' ')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Biodata->profile()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Biodata))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-11 03:03:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 03:03:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 03:03:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 03:03:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 03:19:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 03:20:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 03:21:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 03:22:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 03:27:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 03:27:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 03:35:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 03:36:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 03:38:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 04:04:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 04:04:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 04:04:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 04:14:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-02-11 04:14:51 --> Undefined variable $file_skck
+in APPPATH\Views\pelamar\profile.php on line 273.
+ 1 APPPATH\Views\pelamar\profile.php(273): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $file_skck', 'APPPATH\\Views\\pelamar\\profile.php', 273)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pelamar\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('pelamar/profile', [], true)
+ 5 APPPATH\Controllers\Biodata.php(95): view('pelamar/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Biodata->profile()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Biodata))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-11 04:17:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-02-11 04:17:14 --> Undefined array key "password"
+in APPPATH\Controllers\Biodata.php on line 132.
+ 1 APPPATH\Controllers\Biodata.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "password"', 'APPPATH\\Controllers\\Biodata.php', 132)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Biodata->save_biodata()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Biodata))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-11 04:18:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 04:18:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 04:18:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 04:19:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 04:20:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 04:21:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 04:22:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 04:22:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 09:09:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-02-11 09:09:12 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 1: ...oin biodata b on b.user_id = u.user_id where u.user_id = '' 
+                                                                    ^ in C:\xampp\htdocs\rekruitmen\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\rekruitmen\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'SELECT u.fullna...')
+#2 C:\xampp\htdocs\rekruitmen\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('SELECT u.fullna...')
+#3 C:\xampp\htdocs\rekruitmen\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT u.fullna...')
+#4 C:\xampp\htdocs\rekruitmen\app\Controllers\Biodata.php(20): CodeIgniter\Database\BaseConnection->query('SELECT u.fullna...')
+#5 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(934): App\Controllers\Biodata->profile()
+#6 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Biodata))
+#7 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\rekruitmen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\rekruitmen\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-02-11 09:09:12 --> pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 1: ...oin biodata b on b.user_id = u.user_id where u.user_id = '' 
+                                                                    ^
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Controllers\Biodata.php(20): CodeIgniter\Database\BaseConnection->query('SELECT u.fullname, u.phone, u.email, b.* FROM users u join biodata b on b.user_id = u.user_id where u.user_id = \'\' ')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Biodata->profile()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Biodata))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-11 09:09:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 09:09:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 09:09:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 09:09:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 09:18:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 09:43:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 09:44:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 09:45:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 09:46:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 09:48:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 09:50:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 09:53:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 09:54:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-02-11 09:55:09 --> Undefined variable $result
+in APPPATH\Controllers\Biodata.php on line 227.
+ 1 APPPATH\Controllers\Biodata.php(227): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'APPPATH\\Controllers\\Biodata.php', 227)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Biodata->save_biodata()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Biodata))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-11 09:55:25 --> Undefined variable $result
+in APPPATH\Controllers\Biodata.php on line 227.
+ 1 APPPATH\Controllers\Biodata.php(227): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'APPPATH\\Controllers\\Biodata.php', 227)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Biodata->save_biodata()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Biodata))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-11 09:56:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 09:57:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 09:58:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 09:58:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 10:01:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 10:02:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 10:02:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 10:02:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 10:03:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 10:03:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 10:03:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 10:04:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 10:04:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 10:04:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 10:05:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 10:07:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 10:08:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 10:11:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 10:12:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 10:13:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 10:13:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 10:14:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 10:14:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 10:17:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 10:17:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 10:17:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 10:18:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-02-11 10:18:16 --> [DEPRECATED] password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in APPPATH\Controllers\Biodata.php on line 219.
+ 1 APPPATH\Controllers\Biodata.php(219): password_hash(null, '2y')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Biodata->save_biodata()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Biodata))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-11 10:18:16 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;username&quot; does not exist
+LINE 2: WHERE &quot;username&quot; = 'ananghanafi'
+              ^ in C:\xampp\htdocs\rekruitmen\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\rekruitmen\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'UPDATE "biodata...')
+#2 C:\xampp\htdocs\rekruitmen\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "biodata...')
+#3 C:\xampp\htdocs\rekruitmen\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "biodata...')
+#4 C:\xampp\htdocs\rekruitmen\system\Database\BaseBuilder.php(2462): CodeIgniter\Database\BaseConnection->query('UPDATE "biodata...', Array, false)
+#5 C:\xampp\htdocs\rekruitmen\app\Controllers\Biodata.php(223): CodeIgniter\Database\BaseBuilder->update(Array)
+#6 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(934): App\Controllers\Biodata->save_biodata()
+#7 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Biodata))
+#8 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\rekruitmen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\rekruitmen\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+INFO - 2023-02-11 10:18:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-02-11 10:18:42 --> [DEPRECATED] password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in APPPATH\Controllers\Biodata.php on line 219.
+ 1 APPPATH\Controllers\Biodata.php(219): password_hash(null, '2y')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Biodata->save_biodata()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Biodata))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-11 10:18:42 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;username&quot; does not exist
+LINE 2: WHERE &quot;username&quot; = 'ananghanafi'
+              ^ in C:\xampp\htdocs\rekruitmen\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\rekruitmen\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'UPDATE "biodata...')
+#2 C:\xampp\htdocs\rekruitmen\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "biodata...')
+#3 C:\xampp\htdocs\rekruitmen\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "biodata...')
+#4 C:\xampp\htdocs\rekruitmen\system\Database\BaseBuilder.php(2462): CodeIgniter\Database\BaseConnection->query('UPDATE "biodata...', Array, false)
+#5 C:\xampp\htdocs\rekruitmen\app\Controllers\Biodata.php(223): CodeIgniter\Database\BaseBuilder->update(Array)
+#6 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(934): App\Controllers\Biodata->save_biodata()
+#7 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Biodata))
+#8 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\rekruitmen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\rekruitmen\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+INFO - 2023-02-11 10:18:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 10:18:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 10:19:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 10:19:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 10:21:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 10:21:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 10:22:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-02-11 10:22:51 --> [DEPRECATED] password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in APPPATH\Controllers\Biodata.php on line 219.
+ 1 APPPATH\Controllers\Biodata.php(219): password_hash(null, '2y')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Biodata->save_biodata()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Biodata))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-11 10:22:51 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;username&quot; does not exist
+LINE 2: WHERE &quot;username&quot; = 'ananghanafi'
+              ^ in C:\xampp\htdocs\rekruitmen\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\rekruitmen\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'UPDATE "biodata...')
+#2 C:\xampp\htdocs\rekruitmen\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "biodata...')
+#3 C:\xampp\htdocs\rekruitmen\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "biodata...')
+#4 C:\xampp\htdocs\rekruitmen\system\Database\BaseBuilder.php(2462): CodeIgniter\Database\BaseConnection->query('UPDATE "biodata...', Array, false)
+#5 C:\xampp\htdocs\rekruitmen\app\Controllers\Biodata.php(223): CodeIgniter\Database\BaseBuilder->update(Array)
+#6 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(934): App\Controllers\Biodata->save_biodata()
+#7 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Biodata))
+#8 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\rekruitmen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\rekruitmen\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+INFO - 2023-02-11 10:23:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 10:24:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-02-11 10:24:05 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;username&quot; does not exist
+LINE 2: WHERE &quot;username&quot; = 'ananghanafi'
+              ^ in C:\xampp\htdocs\rekruitmen\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\rekruitmen\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'UPDATE "biodata...')
+#2 C:\xampp\htdocs\rekruitmen\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "biodata...')
+#3 C:\xampp\htdocs\rekruitmen\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "biodata...')
+#4 C:\xampp\htdocs\rekruitmen\system\Database\BaseBuilder.php(2462): CodeIgniter\Database\BaseConnection->query('UPDATE "biodata...', Array, false)
+#5 C:\xampp\htdocs\rekruitmen\app\Controllers\Biodata.php(213): CodeIgniter\Database\BaseBuilder->update(Array)
+#6 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(934): App\Controllers\Biodata->save_biodata()
+#7 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Biodata))
+#8 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\rekruitmen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\rekruitmen\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+INFO - 2023-02-11 10:24:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-02-11 10:24:39 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;username&quot; does not exist
+LINE 2: WHERE &quot;username&quot; = 'ananghanafi'
+              ^ in C:\xampp\htdocs\rekruitmen\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\rekruitmen\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'UPDATE "biodata...')
+#2 C:\xampp\htdocs\rekruitmen\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "biodata...')
+#3 C:\xampp\htdocs\rekruitmen\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "biodata...')
+#4 C:\xampp\htdocs\rekruitmen\system\Database\BaseBuilder.php(2462): CodeIgniter\Database\BaseConnection->query('UPDATE "biodata...', Array, false)
+#5 C:\xampp\htdocs\rekruitmen\app\Controllers\Biodata.php(213): CodeIgniter\Database\BaseBuilder->update(Array)
+#6 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(934): App\Controllers\Biodata->save_biodata()
+#7 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Biodata))
+#8 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\rekruitmen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\rekruitmen\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+INFO - 2023-02-11 10:25:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-02-11 10:25:33 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;username&quot; does not exist
+LINE 2: WHERE &quot;username&quot; = 'ananghanafi'
+              ^ in C:\xampp\htdocs\rekruitmen\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\rekruitmen\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'UPDATE "biodata...')
+#2 C:\xampp\htdocs\rekruitmen\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "biodata...')
+#3 C:\xampp\htdocs\rekruitmen\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "biodata...')
+#4 C:\xampp\htdocs\rekruitmen\system\Database\BaseBuilder.php(2462): CodeIgniter\Database\BaseConnection->query('UPDATE "biodata...', Array, false)
+#5 C:\xampp\htdocs\rekruitmen\app\Controllers\Biodata.php(213): CodeIgniter\Database\BaseBuilder->update(Array)
+#6 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(934): App\Controllers\Biodata->save_biodata()
+#7 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Biodata))
+#8 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\rekruitmen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\rekruitmen\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+INFO - 2023-02-11 10:26:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-02-11 10:26:20 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;username&quot; does not exist
+LINE 2: WHERE &quot;username&quot; = 'ananghanafi'
+              ^ in C:\xampp\htdocs\rekruitmen\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\rekruitmen\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'UPDATE "biodata...')
+#2 C:\xampp\htdocs\rekruitmen\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "biodata...')
+#3 C:\xampp\htdocs\rekruitmen\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "biodata...')
+#4 C:\xampp\htdocs\rekruitmen\system\Database\BaseBuilder.php(2462): CodeIgniter\Database\BaseConnection->query('UPDATE "biodata...', Array, false)
+#5 C:\xampp\htdocs\rekruitmen\app\Controllers\Biodata.php(213): CodeIgniter\Database\BaseBuilder->update(Array)
+#6 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(934): App\Controllers\Biodata->save_biodata()
+#7 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Biodata))
+#8 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\rekruitmen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\rekruitmen\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+INFO - 2023-02-11 10:27:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-02-11 10:27:30 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;username&quot; does not exist
+LINE 2: WHERE &quot;username&quot; = 'ananghanafi'
+              ^ in C:\xampp\htdocs\rekruitmen\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\rekruitmen\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'UPDATE "biodata...')
+#2 C:\xampp\htdocs\rekruitmen\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "biodata...')
+#3 C:\xampp\htdocs\rekruitmen\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "biodata...')
+#4 C:\xampp\htdocs\rekruitmen\system\Database\BaseBuilder.php(2462): CodeIgniter\Database\BaseConnection->query('UPDATE "biodata...', Array, false)
+#5 C:\xampp\htdocs\rekruitmen\app\Controllers\Biodata.php(213): CodeIgniter\Database\BaseBuilder->update(Array)
+#6 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(934): App\Controllers\Biodata->save_biodata()
+#7 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Biodata))
+#8 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\rekruitmen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\rekruitmen\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+INFO - 2023-02-11 10:28:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 10:28:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 10:30:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 10:30:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 10:37:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 10:40:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-11 10:40:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

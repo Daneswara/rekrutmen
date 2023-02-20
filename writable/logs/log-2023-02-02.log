@@ -1,0 +1,265 @@
+CRITICAL - 2023-02-02 23:04:21 --> syntax error, unexpected token "return"
+in APPPATH\Controllers\Users.php on line 62.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Users.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Users')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Users')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Users', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-02 23:06:29 --> Call to undefined method CodeIgniter\Database\Postgre\Connection::insert()
+in APPPATH\Controllers\Users.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Users->register_submit()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-02 23:09:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-02 23:12:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-02 23:13:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-02 23:13:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-02 23:13:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-02 23:22:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-02 23:22:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-02 23:22:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-02-02 23:23:34 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;telp&quot; of relation &quot;users&quot; does not exist
+LINE 1: ...INTO &quot;users&quot; (&quot;username&quot;, &quot;password&quot;, &quot;fullname&quot;, &quot;telp&quot;, &quot;i...
+                                                             ^ in C:\xampp\htdocs\rekruitmen\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\rekruitmen\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'INSERT INTO "us...')
+#2 C:\xampp\htdocs\rekruitmen\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "us...')
+#3 C:\xampp\htdocs\rekruitmen\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "us...')
+#4 C:\xampp\htdocs\rekruitmen\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO "us...', Array, false)
+#5 C:\xampp\htdocs\rekruitmen\app\Controllers\Users.php(78): CodeIgniter\Database\BaseBuilder->insert(Array)
+#6 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(934): App\Controllers\Users->register_submit()
+#7 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#8 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\rekruitmen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\rekruitmen\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-02-02 23:23:34 --> pg_query(): Query failed: ERROR:  column &quot;telp&quot; of relation &quot;users&quot; does not exist
+LINE 1: ...INTO &quot;users&quot; (&quot;username&quot;, &quot;password&quot;, &quot;fullname&quot;, &quot;telp&quot;, &quot;i...
+                                                             ^
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "password", "fullname", "telp", "is_active", "iplogin", "created_at", "updated_at") VALUES (:username:, :password:, :fullname:, :telp:, :is_active:, :iplogin:, :created_at:, :updated_at:)', [...], false)
+ 2 APPPATH\Controllers\Users.php(78): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Users->register_submit()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-02 23:25:27 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;is_active&quot; is of type boolean but expression is of type integer
+LINE 1: ...I.sPYIHefXB4sC', 'Anang Hanafi', '6281586525051', 1, '::1', ...
+                                                             ^
+HINT:  You will need to rewrite or cast the expression. in C:\xampp\htdocs\rekruitmen\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\rekruitmen\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'INSERT INTO "us...')
+#2 C:\xampp\htdocs\rekruitmen\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "us...')
+#3 C:\xampp\htdocs\rekruitmen\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "us...')
+#4 C:\xampp\htdocs\rekruitmen\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO "us...', Array, false)
+#5 C:\xampp\htdocs\rekruitmen\app\Controllers\Users.php(78): CodeIgniter\Database\BaseBuilder->insert(Array)
+#6 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(934): App\Controllers\Users->register_submit()
+#7 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#8 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\rekruitmen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\rekruitmen\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-02-02 23:25:27 --> pg_query(): Query failed: ERROR:  column &quot;is_active&quot; is of type boolean but expression is of type integer
+LINE 1: ...I.sPYIHefXB4sC', 'Anang Hanafi', '6281586525051', 1, '::1', ...
+                                                             ^
+HINT:  You will need to rewrite or cast the expression.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "password", "fullname", "phone", "is_active", "iplogin", "created_at", "updated_at") VALUES (:username:, :password:, :fullname:, :phone:, :is_active:, :iplogin:, :created_at:, :updated_at:)', [...], false)
+ 2 APPPATH\Controllers\Users.php(78): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Users->register_submit()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-02 23:25:51 --> ErrorException: pg_query(): Query failed: ERROR:  null value in column &quot;user_id&quot; of relation &quot;users&quot; violates not-null constraint
+DETAIL:  Failing row contains (null, $2y$10$/nqstqBhablO3sfV0kerH.YKap/Wv4LcG.atgGXf6XS2wjcfNMlLe, t, null, anang_hanafi, null, 6281586525051, Anang Hanafi, null, ::1, null, 2023-02-02 23:25:51, 2023-02-02 23:25:51). in C:\xampp\htdocs\rekruitmen\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\rekruitmen\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'INSERT INTO "us...')
+#2 C:\xampp\htdocs\rekruitmen\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "us...')
+#3 C:\xampp\htdocs\rekruitmen\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "us...')
+#4 C:\xampp\htdocs\rekruitmen\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO "us...', Array, false)
+#5 C:\xampp\htdocs\rekruitmen\app\Controllers\Users.php(78): CodeIgniter\Database\BaseBuilder->insert(Array)
+#6 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(934): App\Controllers\Users->register_submit()
+#7 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#8 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\rekruitmen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\rekruitmen\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-02-02 23:25:51 --> pg_query(): Query failed: ERROR:  null value in column &quot;user_id&quot; of relation &quot;users&quot; violates not-null constraint
+DETAIL:  Failing row contains (null, $2y$10$/nqstqBhablO3sfV0kerH.YKap/Wv4LcG.atgGXf6XS2wjcfNMlLe, t, null, anang_hanafi, null, 6281586525051, Anang Hanafi, null, ::1, null, 2023-02-02 23:25:51, 2023-02-02 23:25:51).
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "password", "fullname", "phone", "is_active", "iplogin", "created_at", "updated_at") VALUES (:username:, :password:, :fullname:, :phone:, :is_active:, :iplogin:, :created_at:, :updated_at:)', [...], false)
+ 2 APPPATH\Controllers\Users.php(78): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Users->register_submit()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-02 23:26:31 --> ErrorException: pg_query(): Query failed: ERROR:  null value in column &quot;user_id&quot; of relation &quot;users&quot; violates not-null constraint
+DETAIL:  Failing row contains (null, $2y$10$Nv8kMmKGOEz76NxK4MGGM.tt20z6xLnIJ3.G1hIo8SjyemLjJGZE6, t, null, anang_hanafi, null, 6281586525051, Anang Hanafi, null, ::1, null, 2023-02-02 23:26:31, 2023-02-02 23:26:31). in C:\xampp\htdocs\rekruitmen\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\rekruitmen\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'INSERT INTO "us...')
+#2 C:\xampp\htdocs\rekruitmen\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "us...')
+#3 C:\xampp\htdocs\rekruitmen\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "us...')
+#4 C:\xampp\htdocs\rekruitmen\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO "us...', Array, false)
+#5 C:\xampp\htdocs\rekruitmen\app\Controllers\Users.php(78): CodeIgniter\Database\BaseBuilder->insert(Array)
+#6 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(934): App\Controllers\Users->register_submit()
+#7 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#8 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\rekruitmen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\rekruitmen\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-02-02 23:26:31 --> pg_query(): Query failed: ERROR:  null value in column &quot;user_id&quot; of relation &quot;users&quot; violates not-null constraint
+DETAIL:  Failing row contains (null, $2y$10$Nv8kMmKGOEz76NxK4MGGM.tt20z6xLnIJ3.G1hIo8SjyemLjJGZE6, t, null, anang_hanafi, null, 6281586525051, Anang Hanafi, null, ::1, null, 2023-02-02 23:26:31, 2023-02-02 23:26:31).
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "password", "fullname", "phone", "is_active", "iplogin", "created_at", "updated_at") VALUES (:username:, :password:, :fullname:, :phone:, :is_active:, :iplogin:, :created_at:, :updated_at:)', [...], false)
+ 2 APPPATH\Controllers\Users.php(78): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Users->register_submit()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-02 23:28:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-02 23:28:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-02-02 23:29:00 --> ErrorException: pg_query(): Query failed: ERROR:  null value in column &quot;user_id&quot; of relation &quot;users&quot; violates not-null constraint
+DETAIL:  Failing row contains (null, $2y$10$6JpnVHdUnkQaS14x95CKM.i1oGVQE8VxDrrYagrUBqJbrjKCx92Ei, t, null, anang_hanafi, null, 6281586525051, Anang Hanafi, null, ::1, null, 2023-02-02 23:28:59, 2023-02-02 23:28:59). in C:\xampp\htdocs\rekruitmen\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\rekruitmen\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'INSERT INTO "us...')
+#2 C:\xampp\htdocs\rekruitmen\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "us...')
+#3 C:\xampp\htdocs\rekruitmen\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "us...')
+#4 C:\xampp\htdocs\rekruitmen\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO "us...', Array, false)
+#5 C:\xampp\htdocs\rekruitmen\app\Controllers\Users.php(78): CodeIgniter\Database\BaseBuilder->insert(Array)
+#6 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(934): App\Controllers\Users->register_submit()
+#7 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#8 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\rekruitmen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\rekruitmen\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-02-02 23:29:00 --> pg_query(): Query failed: ERROR:  null value in column &quot;user_id&quot; of relation &quot;users&quot; violates not-null constraint
+DETAIL:  Failing row contains (null, $2y$10$6JpnVHdUnkQaS14x95CKM.i1oGVQE8VxDrrYagrUBqJbrjKCx92Ei, t, null, anang_hanafi, null, 6281586525051, Anang Hanafi, null, ::1, null, 2023-02-02 23:28:59, 2023-02-02 23:28:59).
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "password", "fullname", "phone", "is_active", "iplogin", "created_at", "updated_at") VALUES (:username:, :password:, :fullname:, :phone:, :is_active:, :iplogin:, :created_at:, :updated_at:)', [...], false)
+ 2 APPPATH\Controllers\Users.php(78): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Users->register_submit()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-02 23:32:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-02-02 23:32:40 --> ErrorException: pg_query(): Query failed: ERROR:  null value in column &quot;user_id&quot; of relation &quot;users&quot; violates not-null constraint
+DETAIL:  Failing row contains (null, $2y$10$4ESXdaVNWU7muPoqFUkvu.c6rxNMWQG2BaxT9CahEsVjDa2AYSWii, t, null, anang_hanafi, null, 6281586525051, Anang Hanafi, null, ::1, null, 2023-02-02 23:32:40, 2023-02-02 23:32:40). in C:\xampp\htdocs\rekruitmen\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\rekruitmen\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'INSERT INTO "us...')
+#2 C:\xampp\htdocs\rekruitmen\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "us...')
+#3 C:\xampp\htdocs\rekruitmen\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "us...')
+#4 C:\xampp\htdocs\rekruitmen\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO "us...', Array, false)
+#5 C:\xampp\htdocs\rekruitmen\app\Controllers\Users.php(78): CodeIgniter\Database\BaseBuilder->insert(Array)
+#6 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(934): App\Controllers\Users->register_submit()
+#7 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#8 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\rekruitmen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\rekruitmen\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-02-02 23:32:40 --> pg_query(): Query failed: ERROR:  null value in column &quot;user_id&quot; of relation &quot;users&quot; violates not-null constraint
+DETAIL:  Failing row contains (null, $2y$10$4ESXdaVNWU7muPoqFUkvu.c6rxNMWQG2BaxT9CahEsVjDa2AYSWii, t, null, anang_hanafi, null, 6281586525051, Anang Hanafi, null, ::1, null, 2023-02-02 23:32:40, 2023-02-02 23:32:40).
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "password", "fullname", "phone", "is_active", "iplogin", "created_at", "updated_at") VALUES (:username:, :password:, :fullname:, :phone:, :is_active:, :iplogin:, :created_at:, :updated_at:)', [...], false)
+ 2 APPPATH\Controllers\Users.php(78): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Users->register_submit()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-02 23:33:08 --> ErrorException: pg_query(): Query failed: ERROR:  null value in column &quot;user_id&quot; of relation &quot;users&quot; violates not-null constraint
+DETAIL:  Failing row contains (null, $2y$10$TvCutywE.IIgXCV7XAOsOu1pgKOSS3dgv.AgihRsgc3PlIOghPkuO, t, null, anang_hanafi, ananghanafi.ifub@gmail.com, 6281586525051, Anang Hanafi, null, null, null, 2023-02-02 23:33:08, 2023-02-02 23:33:08). in C:\xampp\htdocs\rekruitmen\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\rekruitmen\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'INSERT INTO "us...')
+#2 C:\xampp\htdocs\rekruitmen\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "us...')
+#3 C:\xampp\htdocs\rekruitmen\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "us...')
+#4 C:\xampp\htdocs\rekruitmen\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO "us...', Array, false)
+#5 C:\xampp\htdocs\rekruitmen\app\Controllers\Users.php(79): CodeIgniter\Database\BaseBuilder->insert(Array)
+#6 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(934): App\Controllers\Users->register_submit()
+#7 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#8 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\rekruitmen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\rekruitmen\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-02-02 23:33:08 --> pg_query(): Query failed: ERROR:  null value in column &quot;user_id&quot; of relation &quot;users&quot; violates not-null constraint
+DETAIL:  Failing row contains (null, $2y$10$TvCutywE.IIgXCV7XAOsOu1pgKOSS3dgv.AgihRsgc3PlIOghPkuO, t, null, anang_hanafi, ananghanafi.ifub@gmail.com, 6281586525051, Anang Hanafi, null, null, null, 2023-02-02 23:33:08, 2023-02-02 23:33:08).
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "password", "fullname", "phone", "is_active", "email", "created_at", "updated_at") VALUES (:username:, :password:, :fullname:, :phone:, :is_active:, :email:, :created_at:, :updated_at:)', [...], false)
+ 2 APPPATH\Controllers\Users.php(79): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Users->register_submit()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-02 23:35:06 --> ErrorException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_pkey&quot;
+DETAIL:  Key (user_id)=(1) already exists. in C:\xampp\htdocs\rekruitmen\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\rekruitmen\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'INSERT INTO "us...')
+#2 C:\xampp\htdocs\rekruitmen\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "us...')
+#3 C:\xampp\htdocs\rekruitmen\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "us...')
+#4 C:\xampp\htdocs\rekruitmen\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO "us...', Array, false)
+#5 C:\xampp\htdocs\rekruitmen\app\Controllers\Users.php(79): CodeIgniter\Database\BaseBuilder->insert(Array)
+#6 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(934): App\Controllers\Users->register_submit()
+#7 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#8 C:\xampp\htdocs\rekruitmen\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\rekruitmen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\rekruitmen\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-02-02 23:35:06 --> pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_pkey&quot;
+DETAIL:  Key (user_id)=(1) already exists.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "password", "fullname", "phone", "is_active", "email", "created_at", "updated_at") VALUES (:username:, :password:, :fullname:, :phone:, :is_active:, :email:, :created_at:, :updated_at:)', [...], false)
+ 2 APPPATH\Controllers\Users.php(79): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Users->register_submit()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-02 23:35:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-02 23:35:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-02 23:35:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-02 23:39:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-02 23:39:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-02 23:41:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-02 23:41:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-02 23:41:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-02 23:41:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-02 23:42:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-02 23:43:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-02 23:52:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-02 23:52:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-02 23:55:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-02 23:55:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-02-02 23:55:58 --> Call to undefined method CodeIgniter\Database\Postgre\Builder::first()
+in APPPATH\Controllers\Users.php on line 100.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Users->login_submit()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-02 23:59:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-02-02 23:59:34 --> Undefined property: CodeIgniter\Database\Postgre\Result::$password
+in APPPATH\Controllers\Users.php on line 100.
+ 1 APPPATH\Controllers\Users.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Database\\Postgre\\Result::$password', 'APPPATH\\Controllers\\Users.php', 100)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Users->login_submit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

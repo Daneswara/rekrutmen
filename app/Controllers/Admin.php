@@ -13,8 +13,8 @@ class Admin extends BaseController
     {
        $job = $this->db()->query("SELECT * FROM job")->getResult();
     //    dd($job);
-       echo json_encode($job);
-        // $result  = array('job' => $job);
-        // return view('index', $result);
+    //    echo json_encode($job);die();
+        $result  = array('job' => $job);
+        return view('admin/index', $result);
     }
 }
